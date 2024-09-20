@@ -3,7 +3,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to facility_locations_path(@facility) do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to edit_facility_location_path(@facility, @location) do %>

@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to animals_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to edit_animal_path(@animal) do %>
@@ -36,7 +36,7 @@
         <div class="text-sm text-caption-light font-medium uppercase mt-2">SHL Numbers</div>
         <%= @animal.shl_number_codes(", ") %>
     </div>
-    <%= link_to '<< BACK', animals_path, class: "mr-3 mb-3 button-outline-primary" %>
+    <%= link_to back_span_tag, animals_path, class: "mr-3 mb-3 button-outline-primary" %>
     <%= link_to "Edit", edit_animal_path(@animal), class: "button-outline-primary mt-4" %>
   </div>
 </section>

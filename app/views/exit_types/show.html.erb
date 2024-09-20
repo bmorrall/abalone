@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to exit_types_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to edit_exit_type_path(@exit_type) do %>
@@ -22,7 +22,7 @@
       <div class="text-sm text-caption-light font-medium uppercase">Name</div>
       <%= @exit_type.name %>
     </div>
-    <%= link_to '<< BACK', exit_types_path, class: "mr-3 mb-3 button-outline-primary" %>
+    <%= link_to back_span_tag, exit_types_path, class: "mr-3 mb-3 button-outline-primary" %>
     <%= link_to "Edit", edit_exit_type_path(@exit_type), class: "button-outline-primary mt-4" %>
   </div>
 </section>

@@ -3,7 +3,7 @@
     <p id="notice"><%= notice %></p>
     <div class="flex items-start justify-between mb-4">
       <%= link_to enclosures_path, class: "inline-flex items-center py-2 font-bold rounded text-primary-dark hover:text-primary" do %>
-        <span><< Back</span>
+        <%= back_span_tag %>
       <% end %>
       <%= link_to edit_enclosure_path(@enclosure), class: "inline-flex items-center px-4 py-2 font-bold text-white rounded bg-primary-dark hover:bg-primary" do %>
         <span>Edit Enclosure</span>
@@ -21,9 +21,8 @@
         <%= @enclosure.location_name %>
     </div>
 
-    <%= link_to '<< BACK', enclosures_path, class: "mr-3 mb-3 button-outline-primary" %>
+    <%= link_to back_span_tag, enclosures_path, class: "mr-3 mb-3 button-outline-primary" %>
     <%= link_to "Edit", edit_enclosure_path(@enclosure), class: "button-outline-primary mt-4" %>
 
   </div>
 </section>
-

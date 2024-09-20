@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to measurement_types_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to edit_measurement_type_path(@measurement_type) do %>

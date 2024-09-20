@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to facilities_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          << Back
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to new_facility_location_path(@facility) do %>

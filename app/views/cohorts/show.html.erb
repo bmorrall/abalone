@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to cohorts_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
       <%= link_to edit_cohort_path(@cohort) do %>
@@ -30,7 +30,7 @@
         <%= link_to animal.tag, animal_path(animal) %>
       <% end %>
     </div>
-    <%= link_to '<< BACK', cohorts_path, class: "mr-3 mb-3 button-outline-primary" %>
+    <%= link_to back_span_tag, cohorts_path, class: "mr-3 mb-3 button-outline-primary" %>
     <%= link_to "Edit", edit_cohort_path(@cohort), class: "button-outline-primary mt-4" %>
   </div>
 </section>

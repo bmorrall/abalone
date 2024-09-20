@@ -4,7 +4,7 @@
     <div class="flex justify-between items-start mb-4">
       <%= link_to measurements_path do %>
         <button class="text-primary-dark hover:text-primary font-bold py-2 rounded inline-flex items-center">
-          <span><< Back</span>
+          <%= back_span_tag %>
         </button>
       <% end %>
     </div>
@@ -27,6 +27,6 @@
       </div>
         <%= subject_name_value %>
     </div>
-    <%= link_to '<< BACK', measurements_path, class: "mr-3 mb-3 button-outline-primary" %>
+    <%= link_to back_span_tag, measurements_path, class: "mr-3 mb-3 button-outline-primary" %>
   </div>
 </section>
